@@ -1,0 +1,25 @@
+{
+  "name": "next-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio using next.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vic30004/next-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vic30004/next-portfolio/issues"
+  },
+  "homepage": "https://github.com/vic30004/next-portfolio#readme",
+  "dependencies": {
+    "next": "^9.1.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  }
+}
