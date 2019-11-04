@@ -5,6 +5,8 @@ import About from '../components/About';
 import Nav from '../components/Nav';
 import Portfolio from '../components/portfolio/Portfolio';
 import Head from 'next/head';
+import Contact from '../components/contact/Contact';
+import Footer from '../components/footer/Footer'
 import { get } from 'http';
 
 class Index extends Component {
@@ -50,6 +52,8 @@ class Index extends Component {
         <Nav id='nav' onScroll={this.handleScroll} />
         <About />
         <Portfolio projects={this.state} querySearch={querySearch} getAll={getAll} getDeployed={getDeployed} />
+        <Contact/>
+        <Footer/>
         <style jsx global>{`
           body,
           html {

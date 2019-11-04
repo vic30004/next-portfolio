@@ -26,6 +26,8 @@ export class Portfolio extends Component {
                 width: 100%;
                 text-align: center;
                 font-family: 'Raleway', sans-serif;
+                padding: 2rem 0;
+                clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
             }    
         #projects{
             margin: 2rem 0;
@@ -36,7 +38,30 @@ export class Portfolio extends Component {
         #projects .project-container{
             display: grid;
             grid-template-columns: repeat(4,1fr);
+            width:1200px;
+            height:100%;
+            margin:0 auto;
             justify-items:center;
+            animation: cards 1s ease 1;
+            transition: all 1s ease;
+            padding-bottom: 15rem;
+        }
+
+        @keyframes cards{
+          0%{
+            transfrom: translateX(-100%);
+          }
+
+          50%{
+            transform: translateX(20%);
+          }
+
+          75%{
+            transform: translateX(-20%);
+          }
+          100%{
+            transform: translateX(0);
+          }
         }
         
         `}</style>

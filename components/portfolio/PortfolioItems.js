@@ -19,9 +19,8 @@ export class PortfolioItems extends Component {
                   <li className='tech-items'>{tech}</li>
                 ))}
               </ul>
-              <div className="links">
-                <a  href={data.githubRepo}>Github-Repo</a>
-              </div>
+             
+                <a className="links btnGithub" href={data.githubRepo}>Github-Repo</a>
               {data.deploy ? (
                   <a className="btnDeploy" href={data.deployedUrl} target="_blank">Deployed link</a>
               ) : (
@@ -50,28 +49,50 @@ export class PortfolioItems extends Component {
               text-decoration: none;
               color: #111;
               margin: 0.5rem 0;
+              cursor:pointer;
             }
 
             .card {
-              width: 500px;
-              height: 400px;
+              width: 300px;
+              height: 200px;
               position: relative;
-              margin:1rem 0;
+              margin:1rem;
               display:flex;
-              overflow: hidden;
+              
+              padding:3rem 0;
+              text-align:center;
             }
 
             .front {
               position: absolute;
               width: 100%;
               height: 100%;
+              overflow:hidden;
             }
 
+            .front:before{
+              content:'';
+              width:100%;
+              height:100%;
+              top:0;
+              left:0;
+              background: rgba(229,229,216,0.8);
+              position:absolute;
+              z-index:1;
+              transform:skew(150deg) rotateX(45deg) translateX(-150%) translateY(-150%);
+              transition: all .5s ease-in;
+            }
+
+            .card:hover .front:before{
+              transform:skewX(0) rotateX(0) translateX(0) translateY(0);
+            }
             .back {
               position: absolute;
               width: 100%;
               height: 100%;
               text-align:center;
+              z-index:1;
+              overflow:hidden;
             }
 
             .back .back-content {
@@ -80,6 +101,16 @@ export class PortfolioItems extends Component {
               flex-flow: column wrap;
               height: 100%;
               align-items: center;
+              transform: translateY(-100%);
+              transition:all 1s ease;
+            }
+
+           .card:hover .back .back-content{
+              transform: translateY(0);
+            }
+
+            .back .back-content .tech-list .tech-items{
+                font-weight: bold;
             }
             .back .back-content .title{
                 font-weight: bolder;
@@ -101,7 +132,7 @@ export class PortfolioItems extends Component {
 
             .btnDeploy{
                 background: ivory;
-                padding: 0.5rem 1rem;
+                padding: 0.5rem 0.75rem;
                 font-size:1.2rem;
                 font-weight: bold;
                 border-radius: 5px;
@@ -149,7 +180,59 @@ export class PortfolioItems extends Component {
             .btnDeploy:hover:after {
                 transform: translateX(49%) skew(20deg);
             }
+
+            .btnGithub{
+              background: #111;
+              color: ivory;
+              padding: 0.5rem 0.75rem;
+              border-radius: 5px;
+              font-weight: bold;
+              font-size:1.2rem;
+              box-shadow: 0 5px 10px #111;
+              overflow:hidden;
+              z-index:1;
+              position:relative;
+              transition: all .5s ease;
+            }
+            .btnGithub:hover{
+              color:#111;
+              transform: scale(.9);
+              box-shadow: 0rem 3px 5px ivory, 0rem 3px 5px rgb(156, 30, 53);
+          }
+
+            .btnGithub:before{
+              position:absolute;
+              top:0;
+              left:0;
+              content:'';
+              background: ivory;
+              width:100%;
+              height: 100%;
+              transition: all .5s ease;
+              transform: translateX(-110%) skew(20deg);
+              z-index:-1;
+            }
+
+            .btnGithub:after{
+              position:absolute;
+              top:0;
+              left:0;
+              content:'';
+              background: rgb(156, 30, 53);
+              width:100%;
+              height: 100%;
+              transition: all .5s ease;
+              transform: translateX(110%) skew(20deg);
+              z-index:-1;
+            }
             
+            .btnGithub:hover:before {
+              transform: translateX(-50%) skew(20deg);
+          }
+          .btnGithub:hover:after {
+              transform: translateX(49%) skew(20deg);
+          }
+
           `}</style>
         </div>
       );

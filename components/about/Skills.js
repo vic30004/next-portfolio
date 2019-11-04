@@ -250,10 +250,13 @@ export default () => (
       #tech-skill {
         width: 100%;
         height: 100%;
-        border-left: 2px solid black;
+        padding:3rem 0;
       }
       .tech-progress {
         display: flex;
+        justify-content:center;
+        alighn-items:center;
+        heigth:100%;
         margin: 0.5rem;
         padding:0 3rem;
       }
