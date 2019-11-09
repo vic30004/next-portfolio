@@ -3,7 +3,7 @@ import Skills from './about/Skills';
 
 export default () => (
   <section id='about'>
-    <h1 className='title'>About</h1>
+    <h2 className='title'>About</h2>
     <div className='card-container'>
        <div className='card'>
         <div className='logo seo'><img src="../static/images/67-512.png" alt=""/></div>

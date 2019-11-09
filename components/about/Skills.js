@@ -1,7 +1,7 @@
 export default () => (
   <aside id='tech-skill'>
     <div className='tech-container'>
-      <h1 className='tech-title'>Technical Skills</h1>
+      <h2 className='tech-title'>Technical Skills</h2>
       <div className='tech-progress'>
         <span>HTML</span>
         <div className='progress'>

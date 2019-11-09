@@ -7,7 +7,7 @@ export class Portfolio extends Component {
     const { projects, querySearch, getAll, getDeployed } = this.props;
     return (
       <section id="portfolio">
-      <h1 className="title">Portfolio</h1>
+      <h2 className="title">Portfolio</h2>
         <QueryButtons
           querySearch={querySearch}
           getAll={getAll}
