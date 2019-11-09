@@ -15,8 +15,8 @@ export class Portfolio extends Component {
         />
         <div id='projects'>
           <div className='project-container'>
-            {projects.project.map(data => (
-              <PortfolioItems key={data.id} data={data} />
+            {projects.project.map((data,i) => (
+              <PortfolioItems key={i} data={data} />
             ))}
           </div>
         </div>
@@ -61,6 +61,17 @@ export class Portfolio extends Component {
           }
           100%{
             transform: translateX(0);
+          }
+        }
+        @media (max-width: 768px){
+          #portfolio{
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+          }
+          #projects .project-container{
+            grid-template-columns: repeat(1,1fr);
+            width:370px;
+            margin: 0;
           }
         }
         

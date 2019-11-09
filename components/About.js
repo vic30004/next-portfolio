@@ -86,7 +86,6 @@ export default () => (
                 display:flex;
                 justify-content:center;
                 flex-flow:column wrap;
-                overflow:hidden;
             }
             .card .logo{
                 width:200px;
@@ -124,6 +123,38 @@ export default () => (
               100%{
                 transform: translateY(-100%);
               }
+            }
+
+
+            @media (max-width: 768px) {
+              .card-container{
+                flex-flow:column wrap;
+              }
+              .card{
+                width:320px;
+                margin:1rem 0;
+                padding:0;
+                overflow:hidden;
+              }
+
+              .card .logo{
+                width:100px;
+                height:100px;
+                margin: 0 auto;
+            }
+
+            .card p{
+              margin:0;
+              padding:.5rem;
+            }
+            .card h2{
+              margin:0.5rem;
+            }
+
+            .main-container{
+              display: flex;
+              flex-flow:column wrap;
+            }
             }
 
             `

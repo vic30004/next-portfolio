@@ -11,12 +11,7 @@ const QueryButtons = ({querySearch,getAll,getDeployed}) => {
     <div>
       <div id='tech'>
         <ul className='tech-list'>
-          <li className='tech-skill' onClick={getAll}>
-            {' '}
-            All Projects
-          </li>
           <li className='tech-skill' onClick={search}>
-            {' '}
             React
           </li>
           <li className='tech-skill' onClick={search}>
@@ -35,13 +30,21 @@ const QueryButtons = ({querySearch,getAll,getDeployed}) => {
             {' '}
             Deployed
           </li>
+          <li className='tech-skill' onClick={getAll}>
+          {' '}
+          All Projects
+        </li>
         </ul>
       </div>
       <style jsx>
         {`
+        ul{
+          padding:0;
+          margin:0;
+        }
           #tech {
             margin: 2rem 0;
-            text-alighn: center;
+            text-align: center;
             width: 100%;
           }
 
@@ -62,6 +65,19 @@ const QueryButtons = ({querySearch,getAll,getDeployed}) => {
             padding:0.75rem 1rem;
             border-radius: 30px;
             transition: all 1s ease;
+          }
+
+          @media (max-width: 768px){
+            .tech-list{
+              display:grid;
+              grid-template-columns: repeat(2,1fr);
+            }
+            .tech-skill {
+              padding:0 0.5rem;
+              border-radius:0;
+              margin:1rem;
+              font-size:.8rem;
+            }
           }
         `}
       </style>

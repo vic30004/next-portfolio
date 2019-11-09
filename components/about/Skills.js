@@ -256,7 +256,7 @@ export default () => (
         display: flex;
         justify-content:center;
         alighn-items:center;
-        heigth:100%;
+        height:100%;
         margin: 0.5rem;
         padding:0 3rem;
       }
@@ -294,6 +294,15 @@ export default () => (
         }
         70% {
           width: 50%;
+        }
+      }
+
+      @media (max-width: 768px){
+        .tech-progress{
+          font-size:.8rem;
+        }
+        .tech-progress span{
+          width:30%;
         }
       }
     `}</style>

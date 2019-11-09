@@ -47,7 +47,9 @@ class Index extends Component {
 
     return (
       <div>
-        <Head />
+        <Head >
+        <title>Portfolio</title>
+        </Head>
         <Header />
         <Nav id='nav' onScroll={this.handleScroll} />
         <About />

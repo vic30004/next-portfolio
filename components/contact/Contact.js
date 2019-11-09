@@ -6,17 +6,9 @@ const Contact = () => {
             <h1 className="title">
                 Contact
             </h1>
-            <div className="form-container">
-            <form className="form-input">
-                <label>Name</label>
-                <input type="text" name="name" id="name" placeholder="Full Name"/>
-                <label>Email</label>
-                <input type="email" name="name" id="email" placeholder="JohnDoe@gmail.com"/>
-                <label>Message</label>
-                <textarea name="message" id="message" cols="20" rows="5"></textarea>
-            </form>
-            <button className="btnSubmit">Submit</button>
-            </div>
+            <h2>Email:<span> victor_993@msn.com</span></h2>
+            <h2>Phone:<span> 201-660-3627</span></h2>
+
             
 
             <style jsx>{`
@@ -25,11 +17,13 @@ const Contact = () => {
                     padding: 2rem 0;
                     color: ivory;
                     heigth:100%;
+                    text-align:center;
                     font-family: 'Raleway', sans-serif;
                 }
                 #contact .title{
                     margin:0;
                     text-align:center;
+                    text-decoration:underline;
                 }
                 #contact .form-container{
                     width: 1200px;

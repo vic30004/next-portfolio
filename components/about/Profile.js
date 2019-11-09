@@ -38,6 +38,23 @@ export default () => (
         margin: 0 auto;
         clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
       }
+
+      @media (max-width: 768px){
+        #profile .profile-container{
+          width:370px;
+        }
+        #profile .profile-container{
+          margin:0;
+          padding:0 1rem;
+        }
+        #profile .profile-container p{
+          padding:0.5rem;
+        }
+
+        #profile .profile-picture{
+          width:200px;
+        }
+      }
     `}</style>
   </div>
 );

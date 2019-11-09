@@ -79,8 +79,8 @@ export class PortfolioItems extends Component {
               background: rgba(229,229,216,0.8);
               position:absolute;
               z-index:1;
-              transform:skew(150deg) rotateX(45deg) translateX(-150%) translateY(-150%);
-              transition: all .5s ease-in;
+              transform:rotateX(45deg) translateX(-150%) translateY(-150%);
+              transition: all .8s ease-in-out;
             }
 
             .card:hover .front:before{
@@ -231,6 +231,24 @@ export class PortfolioItems extends Component {
           }
           .btnGithub:hover:after {
               transform: translateX(49%) skew(20deg);
+          }
+          @media (max-width: 768px){
+            .card{
+              width:300px;
+              height:200px;
+              border-radius:20px;
+
+            }
+            .back{
+              box-shadow: 0 5px 10px;
+              border-radius:20px;
+
+            }
+            .front{
+              border-radius:20px;
+            }
+
+
           }
 
           `}</style>

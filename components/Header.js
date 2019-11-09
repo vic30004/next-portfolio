@@ -112,13 +112,13 @@ const particleOpt = {
 };
 
 export default () => (
-  <div className='root'>
+  <div className="root">
     <header id='hero-head'>
       <Particles className='particle' params={particleOpt} />
       <div className='main-content'>
         <div className='container'>
           <p>
-            Hello, I am <span className="important">Victor Abu Akleh</span>.<br></br>I am full-stack developer
+            Hello, I am <span className="important">Victor Abu Akleh</span>.<br></br>I am  <span className="important"> full-stack developer </span>
             based in San-Francisco
           </p>
          
@@ -131,8 +131,9 @@ export default () => (
 
       .root {
         background: #111;
-        position: relative;
         font-family: 'Raleway', sans-serif;
+        position:relative;
+      
       }
 
       p{
@@ -163,15 +164,19 @@ export default () => (
       }
 
       .particle {
-        position: absolute;
         width: 100vw;
         height: 100%;
       }
 
+      #hero-head{
+        width:100%;
+        height:100%;
+      }
+
       .main-content {
         position: absolute;
-        top: 30%;
-        left: 16%;
+        top: 20%;
+        left: 15%;
         display: flex;
         justify-content: center;
         flex-flow: column wrap;
@@ -188,6 +193,7 @@ export default () => (
 
       .container {
         width: 100%;
+        heigth:100%;
         heigth: 50px;
         text-align: center;
         color: white;
@@ -196,6 +202,34 @@ export default () => (
 
       .container img {
         border-radius: 50%;
+      }
+
+
+
+       
+        @media (max-width: 768px) {
+          .main-content{
+            font-size:1.2rem;
+            top:0;
+            left:0;
+            transform: translateY(5%) translateX(0%);
+            height:100%;
+          }
+          .main-content p{
+            padding:1rem;
+          }
+          .btn{
+            display:none;
+          }
+        } 
+
+      }
+
+
+      @media(max-width: 1024){
+        .main-content{
+          transform: translateY(5%) translateX(0%);
+        }
       }
     `}</style>
   </div>

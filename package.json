@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "cd out && now --public",
+    "now-build": "next build && next export -o dist"
   },
   "repository": {
     "type": "git",
@@ -20,10 +22,16 @@
   },
   "homepage": "https://github.com/vic30004/next-portfolio#readme",
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^9.1.1",
+    "now": "^16.4.4",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-particles-js": "^2.7.0"
+  },
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "ts-loader": "^6.2.1"
   }
 }

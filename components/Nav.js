@@ -43,6 +43,15 @@ export default () => (
             cursor: pointer;
 
         }
+
+        @media (max-width: 768px) {
+          .nav-bar li{
+            font-size:1rem;
+            margin:1rem;
+          }
+        }
+
+
       `}
     </style>
   </div>
