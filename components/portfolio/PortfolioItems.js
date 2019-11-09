@@ -22,7 +22,7 @@ export class PortfolioItems extends Component {
              
                 <a className="links btnGithub" href={data.githubRepo}>Github-Repo</a>
               {data.deploy ? (
-                  <a className="btnDeploy" href={data.deployedUrl} target="_blank">Deployed link</a>
+                  <a className="btnDeploy" href={data.deployedUrl} target="_blank" rel="noopener">Deployed link</a>
               ) : (
                 false
               )}
