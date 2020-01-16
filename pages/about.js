@@ -1,7 +1,7 @@
+import Badges from "../components/badges/Badges"
 export default() => (
     <div>
     
-    <h1>About</h1>
-    <p>A Full stack developer</p>
+<Badges/>
     </div>
 )

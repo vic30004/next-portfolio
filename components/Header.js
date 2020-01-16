@@ -175,13 +175,9 @@ export default () => (
 
       .main-content {
         position: absolute;
-        top: 20%;
-        left: 15%;
-        display: flex;
-        justify-content: center;
-        flex-flow: column wrap;
-        transform: translateY(50%) translateX(50%);
-        margin: 0 auto;
+        top: 50%;
+        left:50%;
+        transform: translate(-50%, -50%);
         font-size: 2rem;
         color: ivory;
         text-align:center;
