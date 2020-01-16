@@ -102,7 +102,6 @@ export default () => (
           width: 700px;
           height: 500px;
           padding: 3rem 0;
-          margin: 0;
           position: relative;
         }
 
@@ -134,6 +133,43 @@ export default () => (
         .logo img {
           border-radius: 20%;
         }
+
+        @media only screen and (max-width: 600px) {
+
+
+            #badges{
+                width:350px;
+                margin: 0 auto;
+            }
+
+            .container{
+                top:20px;
+                left:30px;
+                width:300px;
+            }
+            .logo{
+                width:40px;
+                height:40px;   
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+            #badges{
+                width: 500px;
+            }
+
+            .container{
+                width: 450px;
+            }
+
+            .logo{
+                width:65px;
+                height:65px;
+            }
+
+        }
+
+
       `}
     </style>
   </div>

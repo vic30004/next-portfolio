@@ -1,5 +1,6 @@
 import Profile from './about/Profile';
 import Skills from './about/Skills';
+import Badges from './badges/Badges';
 
 export default () => (
   <section id='about'>
@@ -38,7 +39,7 @@ export default () => (
 
     <div className="main-container">
         <Profile/>
-        <Skills/>
+        <Badges/>
     </div>
 
 
