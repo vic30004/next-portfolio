@@ -316,11 +316,11 @@ export class PortfolioItems extends Component {
             height:100%;
             top:0;
             left:0;
-            background: rgba(229,229,216,0.8);
+            background: rgba(229,229,216,0.5);
             position:absolute;
             z-index:1;
-            -webkit-transform:rotateX(45deg) translateX(-200%) translateY(-200%);
-                    transform:rotateX(45deg) translateX(-200%) translateY(-200%);
+            -webkit-transform:rotateX(0) translateX(0) translateY(0);
+                    transform:rotateX(0) translateX(0) translateY(0);
             -webkit-transition: all .8s ease-in-out;
             -o-transition: all .8s ease-in-out;
             transition: all .8s ease-in-out;
@@ -354,9 +354,9 @@ export class PortfolioItems extends Component {
             -webkit-box-align: center;
                 -ms-flex-align: center;
                     align-items: center;
-            -webkit-transform: translateY(-200%);
-                -ms-transform: translateY(-200%);
-                    transform: translateY(-200%);
+            -webkit-transform: translateY(0);
+                -ms-transform: translateY(0);
+                    transform: translateY(0);
             -webkit-transition:all 1s ease;
             -o-transition:all 1s ease;
             transition:all 1s ease;
@@ -458,9 +458,9 @@ export class PortfolioItems extends Component {
                       transform: translateX(-50%) skew(20deg);
           }
           .btnDeploy:hover:after {
-              -webkit-transform: translateX(49%) skew(20deg);
-                  -ms-transform: translateX(49%) skew(20deg);
-                      transform: translateX(49%) skew(20deg);
+              -webkit-transform: translateX(0%) skew(0);
+                  -ms-transform: translateX(0%) skew(0);
+                      transform:translateX(0%) skew(0);
           }
 
           .btnGithub{
@@ -499,9 +499,9 @@ export class PortfolioItems extends Component {
             -webkit-transition: all .5s ease;
             -o-transition: all .5s ease;
             transition: all .5s ease;
-            -webkit-transform: translateX(-110%) skew(20deg);
-                -ms-transform: translateX(-110%) skew(20deg);
-                    transform: translateX(-110%) skew(20deg);
+            -webkit-transform: translateX(0%) skew(0);
+                -ms-transform: translateX(0%) skew(0);
+                    transform: translateX(0%) skew(0);
             z-index:-1;
           }
 
@@ -516,21 +516,21 @@ export class PortfolioItems extends Component {
             -webkit-transition: all .5s ease;
             -o-transition: all .5s ease;
             transition: all .5s ease;
-            -webkit-transform: translateX(110%) skew(20deg);
-                -ms-transform: translateX(110%) skew(20deg);
-                    transform: translateX(110%) skew(20deg);
+            -webkit-transform: translateX(0%) skew(0);
+                -ms-transform: translateX(0%) skew(0);
+                    transform: translateX(0%) skew(0);
             z-index:-1;
           }
           
           .btnGithub:hover:before {
-            -webkit-transform: translateX(-50%) skew(20deg);
-                -ms-transform: translateX(-50%) skew(20deg);
-                    transform: translateX(-50%) skew(20deg);
+            -webkit-transform: translateX(0%) skew(0);
+                -ms-transform:translateX(0%) skew(0);
+                    transform: translateX(0%) skew(0);
         }
         .btnGithub:hover:after {
-            -webkit-transform: translateX(49%) skew(20deg);
-                -ms-transform: translateX(49%) skew(20deg);
-                    transform: translateX(49%) skew(20deg);
+            -webkit-transform: translateX(0%) skew(0);
+                -ms-transform: translateX(0%) skew(0);
+                    transform: translateX(0%) skew(0);
         }
           .back{
             -webkit-box-shadow: 0 5px 10px;
