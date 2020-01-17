@@ -51,7 +51,7 @@ export default () => (
         }
 
         @media (max-width: 768px) {
-          .nav-bar li{
+          .nav-bar li a{
             font-size:1rem;
             margin:1rem;
           }

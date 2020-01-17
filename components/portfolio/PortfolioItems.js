@@ -237,17 +237,27 @@ export class PortfolioItems extends Component {
               width:300px;
               height:200px;
               border-radius:20px;
+              font-size:.75rem;
 
             }
             .back{
               box-shadow: 0 5px 10px;
               border-radius:20px;
+              font-size:.75rem;
 
             }
             .front{
               border-radius:20px;
             }
 
+            .title{
+              font-size:0.8rem;
+            }
+
+            .btnGithub,.btnDeploy{
+              padding:0.3;
+              font-size:1rem;
+            }
 
           }
 
