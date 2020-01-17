@@ -4,9 +4,9 @@
 export default () => (
   <div className='nav'>
     <ul className='nav-bar' >
-      <li>About</li>
-      <li>Portfolio</li>
-      <li>Contact</li>
+      <li><a href="#about">About</a> </li>
+      <li><a href="#portfolio">Portfolio</a> </li>
+      <li><a href="#contact">Contact</a> </li>
     </ul>
 
     <style jsx>
@@ -15,6 +15,12 @@ export default () => (
 
         li{
             list-style-type:none;
+        }
+
+        a{
+          text-decoration:none;
+          color: ivory;
+          font-weight:bold;
         }
 
         .nav {
@@ -31,7 +37,7 @@ export default () => (
           color:ivory;
           font-family: 'Raleway', sans-serif;
         }
-        .nav-bar li {
+        .nav-bar li a{
           margin:1rem 3rem;
           font-size:1.7rem;
           padding:.5rem 1rem;

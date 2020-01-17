@@ -8,10 +8,10 @@ export default () => (
         />
       </div>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-        iste eos unde incidunt suscipit necessitatibus aspernatur, aperiam
-        possimus non at. Sunt cumque ad mollitia enim, id asperiores laborum
-        tempore culpa.
+        Full Stack Web Developer and graduate of the rigorous 6 month UC
+        Berkeley Extension Coding Boot Camp. Passion for creating applications
+        that solve day to day problems and provide a memorable user experience.
+        Adept at collaborating with teams as well as working independently.
       </p>
     </div>
 

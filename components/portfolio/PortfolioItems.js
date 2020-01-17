@@ -79,7 +79,7 @@ export class PortfolioItems extends Component {
               background: rgba(229,229,216,0.8);
               position:absolute;
               z-index:1;
-              transform:rotateX(45deg) translateX(-150%) translateY(-150%);
+              transform:rotateX(45deg) translateX(-200%) translateY(-200%);
               transition: all .8s ease-in-out;
             }
 
@@ -101,7 +101,7 @@ export class PortfolioItems extends Component {
               flex-flow: column wrap;
               height: 100%;
               align-items: center;
-              transform: translateY(-100%);
+              transform: translateY(-200%);
               transition:all 1s ease;
             }
 

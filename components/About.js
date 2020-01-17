@@ -7,21 +7,21 @@ export default () => (
     <h2 className='title'>About</h2>
     <div className='card-container'>
        <div className='card'>
-        <div className='logo seo'><img src="../static/images/67-512.png" alt=""/></div>
+        <div className='logo'>
+        <img className="seo" src="../static/images/67-512.png" alt=""/>
+        </div> 
         <h2>SEO</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ex
-          animilaudantium, laborum beatae tempore.
+        What's the point of creating a great website when no one can find it? This is why focusing on SEO is one of my top priorities. 
         </p>
       </div>
        <div className='card'>
-        <div className='logo ux'>
-            <img src="../static/images/ux.png" alt=""/>
+        <div className='logo'>
+            <img className="ux" src="../static/images/ux.png" alt=""/>
         </div>
         <h2>UX/UI</h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ex
-          animilaudantium, laborum beatae tempore.
+         A website should be memorable for every single user. Having a great 
         </p>
       </div>
        <div className='card'>
@@ -87,6 +87,7 @@ export default () => (
                 display:flex;
                 justify-content:center;
                 flex-flow:column wrap;
+                overflow: hidden;
             }
             .card .logo{
                 width:200px;
@@ -94,6 +95,7 @@ export default () => (
                 margin: 0 auto;
             }
 
+          
             .main-container{
                display:grid;
                grid-template-columns: 1fr 1fr;
@@ -102,10 +104,60 @@ export default () => (
                justify-items: center;
 
             }
+            
+            .card:hover .logo .seo{
+              animation:grow 1s ease infinite;
+              transition: all 60s ease;
+            }
 
-            .card .logo .scale{
-              animation: fly .5s ease 1;
-              transition: all 1s ease;
+            .card:hover .logo .ux{
+              animation: spin 1s ease infinite;
+              transition:all 60s ease;
+            }
+
+            .card:hover .logo .scale{
+              animation: fly 1s ease infinite;
+              transition: all 60s ease;
+              overflow:hidden;
+            }
+
+            @keyframes grow{
+              0%{
+                transform: scale(0.7);
+              }
+              25%{
+                transform: scale(1);
+              }
+              50%{
+                transform: scale(1.2);
+              }
+              75%{
+                transform: scale(1.1);
+              }
+              100%{
+                transform: scale(1);
+              }
+            }
+
+            @keyframes spin{
+              0%{
+                transform: rotateY(0);
+              }
+
+              25%{
+                transform: rotateY(2rad);
+              }
+
+             50%{
+                transform: rotateY(3.14rad);
+              }
+
+              100%{
+                transform: rotate(2turn);
+
+              }
+
+
             }
 
             @keyframes fly{
@@ -113,13 +165,13 @@ export default () => (
                 transform: translateY(0);
               }
               25%{
-                transform: translateY(-25%)
+                transform: translateY(-30%)
               }
               50%{
-                transform: translateY(-50%);
+                transform: translateY(-60%);
               }
               75%{
-                transform: translateY(-70%);
+                transform: translateY(-80%);
               }
               100%{
                 transform: translateY(-100%);
