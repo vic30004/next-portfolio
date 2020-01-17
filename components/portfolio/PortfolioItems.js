@@ -316,7 +316,7 @@ export class PortfolioItems extends Component {
             height:100%;
             top:0;
             left:0;
-            background: rgba(229,229,216,0.5);
+            background: rgba(229,229,216,0.7);
             position:absolute;
             z-index:1;
             -webkit-transform:rotateX(0) translateX(0) translateY(0);
