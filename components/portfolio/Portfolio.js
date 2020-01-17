@@ -66,12 +66,13 @@ export class Portfolio extends Component {
         @media (max-width: 768px){
           #portfolio{
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            
 
           }
           #projects .project-container{
             grid-template-columns: repeat(1,1fr);
             width:370px;
-            margin: 0;
+            margin: 0 auto;
           }
         }
         

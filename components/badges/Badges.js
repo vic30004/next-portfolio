@@ -132,6 +132,11 @@ export default () => (
 
         .logo img {
           border-radius: 20%;
+          transition: all 0.5s ease;
+        }
+        
+        .logo img:hover{
+            transform: scale(1.1);
         }
 
         @media only screen and (max-width: 600px) {
@@ -153,18 +158,22 @@ export default () => (
             }
         }
 
+  
+
+
         @media only screen and (max-width: 700px) {
             #badges{
-                width: 500px;
+                width: 350px;
+                margin: 0 auto;
             }
 
             .container{
-                width: 450px;
+                width: 320px;
             }
 
             .logo{
-                width:65px;
-                height:65px;
+                width:45px;
+                height:45px;
             }
 
         }

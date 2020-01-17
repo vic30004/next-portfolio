@@ -25,12 +25,13 @@ export default () => (
         flex-flow: column wrap;
         width: 50%;
         align-items: center;
+        justify-content-center;
+        margin: 0 auto;
       }
 
       #profile .profile-container{
-          width:700px;
-          padding:1rem;
-          margin: 0 2rem;
+          width:100%;
+          margin: 0 1rem;
       }
 
       #profile .profile-picture {
@@ -41,14 +42,14 @@ export default () => (
 
       @media (max-width: 768px){
         #profile .profile-container{
-          width:370px;
+          width:100%;
         }
         #profile .profile-container{
-          margin:0;
-          padding:0 1rem;
+          margin:0 auto;
+          
         }
         #profile .profile-container p{
-          padding:0.5rem;
+          width:100%;
         }
 
         #profile .profile-picture{
