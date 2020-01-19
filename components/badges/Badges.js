@@ -26,25 +26,25 @@ export default () => (
         </div>
         <div className='logo'>
           <img
-            src='https://mpng.pngfly.com/20180425/jrw/kisspng-node-js-javascript-web-application-express-js-comp-5ae0f84e2a4242.1423638015246930701731.jpg'
+            src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png'
             alt=''
           />
         </div>
         <div className='logo'>
           <img
-            src='https://p7.hiclipart.com/preview/354/683/606/logo-mysql-database-phpmyadmin-oracle-sql-logo.jpg'
+            src='https://upload.wikimedia.org/wikipedia/he/thumb/6/62/MySQL.svg/1200px-MySQL.svg.png'
             alt=''
           />
         </div>
         <div className='logo'>
           <img
-            src='https://img.favpng.com/7/5/11/postgresql-logo-computer-software-database-png-favpng-VzwjvpxaDys6FnN0apYZJbGV7.jpg'
+            src='https://miro.medium.com/max/1200/1*bm7KFpEG2Qahn24t0OTNlQ.png'
             alt=''
           />
         </div>
         <div className='logo'>
           <img
-            src='https://toppng.com/public/uploads/preview/9kib-354x415-unnamed-mongodb-logo-sv-11562860723mgempnmrq3.png'
+            src='http://kaptastech.com/wp-content/uploads/2017/02/mongodb-logo.png'
             alt=''
           />
         </div>
@@ -65,13 +65,13 @@ export default () => (
         </div>
         <div className='logo'>
           <img
-            src='https://www.vertica.com/wp-content/uploads/2019/07/Golang.png'
+            src='https://seeklogo.com/images/G/go-logo-046185B647-seeklogo.com.png'
             alt=''
           />
         </div>
         <div className='logo'>
           <img
-            src='https://img.favpng.com/23/10/7/c-programming-language-logo-microsoft-visual-studio-net-framework-png-favpng-WLLTMqZhSPAk9q3DTh993fZnh.jpg'
+            src='https://upload.wikimedia.org/wikipedia/commons/8/82/C_Sharp_logo.png'
             alt=''
           />
         </div>
@@ -105,6 +105,7 @@ export default () => (
           position: relative;
         }
 
+
         img {
           width: 100%;
           height: 100%;
@@ -112,6 +113,16 @@ export default () => (
 
         #pinboard {
           position: absolute;
+        }
+
+        #pinboard:before{
+          content:'';
+          position:absolute;
+          width:94.5%;
+          height:91.1%;
+          top:21px;
+          left:21px;
+          background:rgba(0,0,0,0.3);
         }
 
         .container {
@@ -142,11 +153,16 @@ export default () => (
         @media only screen and (max-width: 600px) {
 
 
+
             #badges{
                 width:350px;
                 margin: 0 auto;
             }
 
+            #pinboard:before{
+              top:10px;
+              left:10px;
+            }
             .container{
                 top:20px;
                 left:30px;
