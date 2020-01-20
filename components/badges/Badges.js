@@ -2,7 +2,7 @@ export default () => (
   <div id='badges'>
     <div id='pinboard'>
       <img
-        src='https://i.dlpng.com/static/png/5405439-mysoreplywood-pin-board-pinboard-png-980_654_preview.png'
+        src='https://cdn.pixabay.com/photo/2017/08/11/16/20/pin-board-2631965_960_720.png'
         alt=''
       />
       <div className='container'>
@@ -118,25 +118,25 @@ export default () => (
         #pinboard:before{
           content:'';
           position:absolute;
-          width:94.5%;
-          height:91.1%;
-          top:21px;
-          left:21px;
+          width:88%;
+          height:78%;
+          top:11%;
+          left:6%;
           background:rgba(0,0,0,0.3);
         }
 
         .container {
           position: absolute;
-          width: 650px;
-          top: 30px;
-          left: 40px;
+          width: 600px;
+          top: 55px;
+          left: 65px;
           display: flex;
           flex-flow: row wrap;
           float: left;
         }
 
         .logo {
-          width: 70px;
+          width: 65px;
           heigth: 70px;
           margin: 0.5rem;
         }
@@ -160,17 +160,15 @@ export default () => (
             }
 
             #pinboard:before{
-              top:10px;
-              left:10px;
             }
             .container{
-                top:20px;
+                top:40px;
                 left:30px;
-                width:300px;
+                width:250px;
             }
             .logo{
-                width:40px;
-                height:40px;   
+                width:30px;
+                height:30px;   
             }
         }
 
@@ -185,11 +183,13 @@ export default () => (
 
             .container{
                 width: 320px;
+                top:30px;
+                left:33px;
             }
 
             .logo{
-                width:45px;
-                height:45px;
+                width:40px;
+                height:35px;
             }
 
         }
