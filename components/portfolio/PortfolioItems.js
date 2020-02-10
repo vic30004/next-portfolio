@@ -19,8 +19,8 @@ export class PortfolioItems extends Component {
                   <li className='tech-items'>{tech}</li>
                 ))}
               </ul>
-
-              <a className='links btnGithub' href={data.githubRepo}>
+              <div className="button-list">
+              <a className='links btnGithub' target='_blank' rel='noopener' href={data.githubRepo}>
                 Github-Repo
               </a>
               {data.deploy ? (
@@ -36,6 +36,8 @@ export class PortfolioItems extends Component {
                 false
               )}
             </div>
+              </div>
+              
           </div>
 
           <style jsx>{`
@@ -47,6 +49,13 @@ export class PortfolioItems extends Component {
             ul {
               margin: 0;
               padding: 0;
+            }
+
+            .button-list{
+              display:flex;
+              justify-content:space-around;
+              align-items:center;
+
             }
 
             li {
@@ -140,17 +149,18 @@ export class PortfolioItems extends Component {
               transform: translateY(0);
             }
 
-            .back .back-content .description{
-              padding:0 2rem;
-              font-weight:bold;
+            .back .back-content .description {
+              padding: 0 2rem;
+              font-weight: bold;
             }
 
             .back .back-content .tech-list .tech-items {
               font-weight: bold;
+              font-size:0.75rem;
             }
             .back .back-content .title {
               font-weight: bolder;
-              font-size: 1.5rem;
+              font-size: 1.3rem;
             }
 
             .back .back-content .tech-list {
@@ -173,9 +183,11 @@ export class PortfolioItems extends Component {
 
             .btnDeploy {
               background: ivory;
-              padding: 0.5rem 0.75rem;
+              padding: 0.3rem ;
               font-size: 1.2rem;
               font-weight: bold;
+              text-align:center;
+              margin-left:1rem;
               border-radius: 5px;
               -webkit-box-shadow: 0rem 5px 10px ivory;
               box-shadow: 0rem 5px 10px ivory;
@@ -244,8 +256,9 @@ export class PortfolioItems extends Component {
             .btnGithub {
               background: #111;
               color: ivory;
-              padding: 0.5rem 0.75rem;
+              padding: 0.3rem;
               border-radius: 5px;
+              margin: 0 0.4rem;
               font-weight: bold;
               font-size: 1.2rem;
               -webkit-box-shadow: 0 5px 10px #111;
@@ -413,10 +426,11 @@ export class PortfolioItems extends Component {
 
               .btnDeploy {
                 background: ivory;
-                padding: 0.5rem 0.75rem;
-                font-size: 1.2rem;
-                font-weight: bold;
+                padding: 0.3rem;
                 border-radius: 5px;
+                margin: 0 0.4rem;
+                font-weight: bold;
+                font-size: 1.2rem;
                 -webkit-box-shadow: 0rem 5px 10px ivory;
                 box-shadow: 0rem 5px 10px ivory;
                 position: relative;
