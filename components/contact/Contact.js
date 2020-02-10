@@ -8,10 +8,20 @@ const Contact = () => {
             </h2>
             <h3>Email:<span> victor_993@msn.com</span></h3>
             <h3>Phone:<span> 201-660-3627</span></h3>
+            <div className="icons">
+             <a href="https://github.com/vic30004" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/victor-abu-akleh-920b24163/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a> 
+            </div>
+           
+
+
+
 
             
 
             <style jsx>{`
+            
+
                 #contact{
                     background:#161615;
                     padding: 2rem 0;
@@ -42,11 +52,21 @@ const Contact = () => {
                 }
 
 
-
+                
                 #contact .form-input input, textarea{
                     margin-bottom: 0.75rem;
                     border-radius: 5px;
                     padding: 0.2rem 0.5rem;
+                }
+
+                #contact .icons{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                #contact .icons a{
+                    margin: 0 1rem;
                 }
 
                 .btnSubmit{
