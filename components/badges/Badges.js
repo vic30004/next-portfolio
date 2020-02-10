@@ -122,7 +122,7 @@ export default () => (
           height:78%;
           top:11%;
           left:6%;
-          background:rgba(0,0,0,0.3);
+          background:rgba(255,255,255,0.2);
         }
 
         .container {
