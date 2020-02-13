@@ -133,7 +133,7 @@ export default () => (
         background: #111;
         font-family: 'Raleway', sans-serif;
         position:relative;
-      
+        font-display: swap;
       }
 
       p{

@@ -63,6 +63,7 @@ export default () => (
           text-align: center;
           clear: both;
           font-family: 'Raleway', sans-serif;
+          font-display: swap;
         }
 
         .card-container {

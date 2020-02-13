@@ -26,6 +26,7 @@ export class Portfolio extends Component {
                 width: 100%;
                 text-align: center;
                 font-family: 'Raleway', sans-serif;
+                font-display: swap;
                 padding: 2rem 0;
                 clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
             }    

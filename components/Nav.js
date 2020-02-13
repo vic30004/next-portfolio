@@ -36,6 +36,7 @@ export default () => (
           padding: 0;
           color:ivory;
           font-family: 'Raleway', sans-serif;
+          font-display: swap;
         }
         .nav-bar li a{
           margin:1rem 3rem;

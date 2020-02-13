@@ -29,6 +29,7 @@ const Contact = () => {
                     heigth:100%;
                     text-align:center;
                     font-family: 'Raleway', sans-serif;
+                    font-display: swap;
                 }
                 #contact .title{
                     margin:0;
@@ -78,6 +79,7 @@ const Contact = () => {
                     border:none;
                     outline:none
                     font-family: 'Raleway', sans-serif;
+                    font-display: swap;
                     font-weight: bold;
                     font-size: 1.2rem;
                     background:#161615;
