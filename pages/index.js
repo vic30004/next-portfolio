@@ -59,6 +59,10 @@ class Index extends Component {
         experience/skills in software and application development using modern
         tools will be utilized for the advancement of the company.'
           />
+          <meta
+            name='google-site-verification'
+            content='TL2nneko15midW_q2T1kf7o1b4_IzuKJ3v8IefojNm0'
+          />
         </Helmet>
         <Header />
         <Nav id='nav' onScroll={this.handleScroll} />
