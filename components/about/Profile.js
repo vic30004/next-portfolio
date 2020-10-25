@@ -8,10 +8,10 @@ export default () => (
         />
       </div>
       <p>
-        Full Stack Web Developer and graduate of the rigorous 6 month UC
-        Berkeley Extension Coding Boot Camp. Passion for creating applications
-        that solve day to day problems and provide a memorable user experience.
-        Adept at collaborating with teams as well as working independently.
+        Highly flexible individual with analytical skills, Hopeful for the
+        position of Software Developer where outstanding technical
+        experience/skills in software and application development using modern
+        tools will be utilized for the advancement of the company.
       </p>
     </div>
 

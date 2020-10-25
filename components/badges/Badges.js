@@ -1,3 +1,5 @@
+import React,{lazy,Suspense} from 'react';
+
 export default () => (
   <div id='badges'>
     <div id='pinboard'>

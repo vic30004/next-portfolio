@@ -17,7 +17,7 @@ export default class MyDocument extends Document {
           <script
             src='https://kit.fontawesome.com/b4775cc3ca.js'
             crossorigin='anonymous'
-          ></script>
+          async></script>
         </Head>
         <body>
           <Main />

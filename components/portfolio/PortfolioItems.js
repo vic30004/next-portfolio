@@ -7,7 +7,7 @@ export class PortfolioItems extends Component {
       return (
         <div className='card'>
           <div className='front'>
-            {data.picture && <img src={data.picture} alt='' />}
+            {data.picture && <img src={data.picture} alt={`${data.title}-project-picture`} />}
           </div>
           <div className='back'>
             <div className='back-content'>

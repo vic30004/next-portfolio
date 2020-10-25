@@ -28,6 +28,7 @@
     "now": "^16.4.4",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-helmet": "^6.1.0",
     "react-particles-js": "^2.7.0"
   },
   "devDependencies": {

@@ -118,8 +118,7 @@ export default () => (
       <div className='main-content'>
         <div className='container'>
           <p>
-            Hello, I am <span className="important">Victor Abu Akleh</span>.<br></br>I am  <span className="important"> full-stack developer </span>
-            based in San-Francisco
+            Hello, I am <span className="important">Victor Abu Akleh</span>.<br></br>I am a <span className="important"> software engineer </span>
           </p>
          
         </div>

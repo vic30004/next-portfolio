@@ -6,8 +6,9 @@ import Nav from '../components/Nav';
 import Portfolio from '../components/portfolio/Portfolio';
 import Head from 'next/head';
 import Contact from '../components/contact/Contact';
-import Footer from '../components/footer/Footer'
+import Footer from '../components/footer/Footer';
 import { get } from 'http';
+import { Helmet } from 'react-helmet';
 
 class Index extends Component {
   constructor(props) {
@@ -24,7 +25,7 @@ class Index extends Component {
   }
 
   render() {
-    const querySearch = async query => {
+    const querySearch = async (query) => {
       let url = `https://victor-porfolio-api.herokuapp.com/api/portfolio/projects?tech[in]=${query}`;
       const res = await fetch(url);
       const data = await res.json();
@@ -38,24 +39,38 @@ class Index extends Component {
       this.setState({ project: data.data });
     };
 
-    const getDeployed = async () =>{
-      let url = `https://victor-porfolio-api.herokuapp.com/api/portfolio/projects?deploy=true`
+    const getDeployed = async () => {
+      let url = `https://victor-porfolio-api.herokuapp.com/api/portfolio/projects?deploy=true`;
       const res = await fetch(url);
       const data = await res.json();
       this.setState({ project: data.data });
-    }
+    };
 
     return (
       <div>
-        <Head >
-        <title>Portfolio</title>
-        </Head>
+        <Helmet>
+          <meta charSet='utf-8' />
+          <title>Victor Abu Akleh | Software Engineer</title>
+          <link rel='canonical' href='http://victor-aa.now.sh/' />
+          <meta
+            name='description'
+            content='Highly flexible individual with analytical skills, Hopeful for the
+        position of Software Developer where outstanding technical
+        experience/skills in software and application development using modern
+        tools will be utilized for the advancement of the company.'
+          />
+        </Helmet>
         <Header />
         <Nav id='nav' onScroll={this.handleScroll} />
         <About />
-        <Portfolio projects={this.state} querySearch={querySearch} getAll={getAll} getDeployed={getDeployed} />
-        <Contact/>
-        <Footer/>
+        <Portfolio
+          projects={this.state}
+          querySearch={querySearch}
+          getAll={getAll}
+          getDeployed={getDeployed}
+        />
+        <Contact />
+        <Footer />
         <style jsx global>{`
           body,
           html {
