@@ -48,6 +48,12 @@ class Index extends Component {
 
     return (
       <div>
+        <Head>
+          <meta
+            name='google-site-verification'
+            content='TL2nneko15midW_q2T1kf7o1b4_IzuKJ3v8IefojNm0'
+          />
+        </Head>
         <Helmet>
           <meta charSet='utf-8' />
           <title>Victor Abu Akleh | Software Engineer</title>
@@ -58,10 +64,6 @@ class Index extends Component {
         position of Software Developer where outstanding technical
         experience/skills in software and application development using modern
         tools will be utilized for the advancement of the company.'
-          />
-          <meta
-            name='google-site-verification'
-            content='TL2nneko15midW_q2T1kf7o1b4_IzuKJ3v8IefojNm0'
           />
         </Helmet>
         <Header />
