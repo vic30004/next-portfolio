@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Image, Placeholder } from 'cloudinary-react';
 
 export class PortfolioItems extends Component {
   render() {
@@ -7,7 +8,26 @@ export class PortfolioItems extends Component {
       return (
         <div className='card'>
           <div className='front'>
-            {data.picture && <img src={data.picture} alt={`${data.title}-project-picture`} />}
+            {data.public_id && (
+              <Image
+                cloudName='dawyijhjw'
+                publicId={data.public_id}
+                width='300'
+                format='webp'
+                secure='true'
+                responive
+                responsiveUseBreakpoints='true'
+                quality='auto'
+                fetchFormat='auto'
+                dpr='auto'
+                loading='lazy'
+                crop='scale'
+                height='296'
+                alt={`${data.title}-project-picture`}
+              >
+                <Placeholder type='pixelate' />
+              </Image>
+            )}
           </div>
           <div className='back'>
             <div className='back-content'>
@@ -15,47 +35,49 @@ export class PortfolioItems extends Component {
               <p className='description'>{data.description}</p>
 
               <ul className='tech-list'>
-                {data.tech.map(tech => (
+                {data.tech.map((tech) => (
                   <li className='tech-items'>{tech}</li>
                 ))}
               </ul>
-              <div className="button-list">
-              <a className='links btnGithub' target='_blank' rel='noopener' href={data.githubRepo}>
-                Github-Repo
-              </a>
-              {data.deploy ? (
-                <a
-                  className='btnDeploy'
-                  href={data.deployedUrl}
-                  target='_blank'
-                  rel='noopener'
-                >
-                  Deployed link
-                </a>
-              ) : (
-                false
-              )}
-            </div>
+              <div className='button-list'>
+                {data.githubRepo ? (
+                  <a
+                    className='links btnGithub'
+                    target='_blank'
+                    rel='noopener'
+                    href={data.githubRepo}
+                  >
+                    Github-Repo
+                  </a>
+                ) : (
+                  ''
+                )}
+                {data.deploy ? (
+                  <a
+                    className='btnDeploy'
+                    href={data.deployedUrl}
+                    target='_blank'
+                    rel='noopener'
+                  >
+                    Deployed link
+                  </a>
+                ) : (
+                  false
+                )}
               </div>
-              
+            </div>
           </div>
 
           <style jsx>{`
-            img {
-              width: 100%;
-              height: 100%;
-            }
-
             ul {
               margin: 0;
               padding: 0;
             }
 
-            .button-list{
-              display:flex;
-              justify-content:space-around;
-              align-items:center;
-
+            .button-list {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
             }
 
             li {
@@ -156,7 +178,7 @@ export class PortfolioItems extends Component {
 
             .back .back-content .tech-list .tech-items {
               font-weight: bold;
-              font-size:0.75rem;
+              font-size: 0.75rem;
             }
             .back .back-content .title {
               font-weight: bolder;
@@ -183,11 +205,11 @@ export class PortfolioItems extends Component {
 
             .btnDeploy {
               background: ivory;
-              padding: 0.3rem ;
+              padding: 0.3rem;
               font-size: 1.2rem;
               font-weight: bold;
-              text-align:center;
-              margin-left:1rem;
+              text-align: center;
+              margin-left: 1rem;
               border-radius: 5px;
               -webkit-box-shadow: 0rem 5px 10px ivory;
               box-shadow: 0rem 5px 10px ivory;
