@@ -1,7 +1,9 @@
 import Profile from './about/Profile';
 import dynamic from 'next/dynamic';
 import { Image, Placeholder } from 'cloudinary-react';
-const Badges = dynamic(() => import('./badges/Badges'),{loading:<p>Loading...</p>});
+const Badges = dynamic(() => import('./badges/Badges'), {
+  loading: <p>Loading...</p>,
+});
 export default () => (
   <section id='about'>
     <h2 className='title'>About</h2>
@@ -227,7 +229,7 @@ export default () => (
 
         @media (max-width: 768px) {
           .card-container {
-            flex-flow: column wrap;
+            flex-flow: column nowrap;
           }
           .card {
             width: 320px;
@@ -252,7 +254,8 @@ export default () => (
 
           .main-container {
             display: flex;
-            flex-flow: column wrap;
+            flex-flow: column nowrap;
+            height: 750px;
           }
         }
       `}
