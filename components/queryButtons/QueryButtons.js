@@ -12,7 +12,7 @@ const QueryButtons = ({ querySearch, getAll, getDeployed }) => {
     sql: false,
     node: false,
     deployed: false,
-    all: false,
+    all: true,
   });
 
   const handelClick = (e) => {
@@ -33,7 +33,11 @@ const QueryButtons = ({ querySearch, getAll, getDeployed }) => {
           className='tech-skill'
           onClick={search}
           name={'react'}
-          style={react ? { boxShadow: 'none', transform:'translateY(4%)' } : { boxShadow: '' }}
+          style={
+            react
+              ? { boxShadow: 'none', transform: 'translateY(4%)' }
+              : { boxShadow: '' }
+          }
         >
           React
         </button>
@@ -42,7 +46,11 @@ const QueryButtons = ({ querySearch, getAll, getDeployed }) => {
           className='tech-skill'
           onClick={search}
           name={'javascript'}
-          style={javascript ? { boxShadow: 'none', transform:'translateY(4%)' } : { boxShadow: '' }}
+          style={
+            javascript
+              ? { boxShadow: 'none', transform: 'translateY(4%)' }
+              : { boxShadow: '' }
+          }
         >
           {' '}
           Javascript
@@ -51,7 +59,11 @@ const QueryButtons = ({ querySearch, getAll, getDeployed }) => {
           className='tech-skill'
           onClick={search}
           name={'sql'}
-          style={sql ? { boxShadow: 'none', transform:'translateY(4%)' } : { boxShadow: '' }}
+          style={
+            sql
+              ? { boxShadow: 'none', transform: 'translateY(4%)' }
+              : { boxShadow: '' }
+          }
         >
           {' '}
           MySql
@@ -60,7 +72,11 @@ const QueryButtons = ({ querySearch, getAll, getDeployed }) => {
           className='tech-skill'
           onClick={search}
           name={'node'}
-          style={node ? { boxShadow: 'none', transform:'translateY(4%)' } : { boxShadow: '' }}
+          style={
+            node
+              ? { boxShadow: 'none', transform: 'translateY(4%)' }
+              : { boxShadow: '' }
+          }
         >
           {' '}
           Node.js
@@ -69,7 +85,11 @@ const QueryButtons = ({ querySearch, getAll, getDeployed }) => {
           className='tech-skill'
           onClick={(e) => handelClick(e)}
           name={'deployed'}
-          style={deployed ? { boxShadow: 'none', transform:'translateY(4%)' } : { boxShadow: '' }}
+          style={
+            deployed
+              ? { boxShadow: 'none', transform: 'translateY(4%)' }
+              : { boxShadow: '' }
+          }
         >
           {' '}
           Deployed
@@ -78,7 +98,11 @@ const QueryButtons = ({ querySearch, getAll, getDeployed }) => {
           className='tech-skill'
           onClick={(e) => handelClick(e)}
           name={'all'}
-          style={all ? { boxShadow: 'none', transform:'translateY(4%)' } : { boxShadow: '' }}
+          style={
+            all
+              ? { boxShadow: 'none', transform: 'translateY(4%)' }
+              : { boxShadow: '' }
+          }
         >
           {' '}
           All
