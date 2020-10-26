@@ -1,99 +1,431 @@
-import React,{lazy,Suspense} from 'react';
+import React, { lazy, Suspense } from 'react';
+import { Image, Placeholder } from 'cloudinary-react';
 
 export default () => (
   <div id='badges'>
     <div id='pinboard'>
-      <img
-        src='https://cdn.pixabay.com/photo/2017/08/11/16/20/pin-board-2631965_960_720.png'
-        alt=''
-      />
+      <Image
+        cloudName='dawyijhjw'
+        publicId={'portfolio/logos/pin-board-2631965_960_720_b0s9us'}
+        width='auto'
+        format='webp'
+        secure='true'
+        responive
+        responsiveUseBreakpoints='true'
+        quality='auto'
+        fetchFormat='auto'
+        dpr='auto'
+        loading='lazy'
+        crop='scale'
+        height='494'
+        alt={`pinboard`}
+        style={{ width: '100%', height: '100%' }}
+      >
+        <Placeholder type='pixelate' />
+      </Image>
       <div className='container'>
         <div className='logo'>
-          <img
-            src='https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png'
-            alt=''
-          />
+          <Image
+            cloudName='dawyijhjw'
+            publicId={'portfolio/logos/HTML5_Badge_512_gdbacg'}
+            width='65'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='fit'
+            height='95'
+            alt={`htlm5`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
         </div>
         <div className='logo'>
-          <img
-            src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/1200px-CSS.3.svg.png'
-            alt=''
-          />
+          <Image
+            cloudName='dawyijhjw'
+            publicId={'portfolio/logos/1200px-CSS.3.svg_qmqrsc'}
+            width='auto'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='fill'
+            height='95'
+            alt={`css`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
         </div>
         <div className='logo'>
-          <img
-            src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png'
-            alt=''
-          />
+          <Image
+            cloudName='dawyijhjw'
+            publicId={'portfolio/logos/600px-JavaScript-logo_pcwwgy'}
+            width='auto'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='fill'
+            height='95'
+            alt={`javascript`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
         </div>
         <div className='logo'>
-          <img
-            src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png'
-            alt=''
-          />
+          <Image
+            cloudName='dawyijhjw'
+            publicId={'portfolio/logos/590px-Node.js_logo.svg_tnujf6'}
+            width='auto'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='fill'
+            height='95'
+            alt={`node js`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
         </div>
         <div className='logo'>
-          <img
-            src='https://upload.wikimedia.org/wikipedia/he/thumb/6/62/MySQL.svg/1200px-MySQL.svg.png'
-            alt=''
-          />
+          <Image
+            cloudName='dawyijhjw'
+            publicId={'portfolio/logos/1200px-MySQL.svg_kwdmwj'}
+            width='auto'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='fill'
+            height='95'
+            alt={`mysql`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
         </div>
         <div className='logo'>
-          <img
-            src='https://miro.medium.com/max/1200/1*bm7KFpEG2Qahn24t0OTNlQ.png'
-            alt=''
-          />
+          <Image
+            cloudName='dawyijhjw'
+            publicId={'portfolio/logos/jquery-logo-png--800_b53nwl'}
+            width='auto'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='fill'
+            height='95'
+            alt={`jquery`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
         </div>
         <div className='logo'>
-          <img
-            src='http://kaptastech.com/wp-content/uploads/2017/02/mongodb-logo.png'
-            alt=''
-          />
+          <Image
+            cloudName='dawyijhjw'
+            publicId={'portfolio/logos/512px-Bootstrap_logo.svg_kl3qb8'}
+            width='auto'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='fill'
+            height='95'
+            alt={`bootstrap`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
         </div>
         <div className='logo'>
-          <img
-            src='https://seeklogo.com/images/F/firebase-logo-402F407EE0-seeklogo.com.png'
-            alt=''
-          />
+          <Image
+            cloudName='dawyijhjw'
+            publicId={'portfolio/logos/Python_logo-512_urnfbd'}
+            width='auto'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='fill'
+            height='95'
+            alt={`python`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
         </div>
         <div className='logo'>
-          <img src='https://cdn.worldvectorlogo.com/logos/react.svg' alt='' />
+          <Image
+            cloudName='dawyijhjw'
+            publicId={'portfolio/logos/C_Sharp_logo_noq1za'}
+            width='auto'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='fill'
+            height='95'
+            alt={`c#`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
         </div>
         <div className='logo'>
-          <img
-            src='https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1280px-Nextjs-logo.svg.png'
-            alt=''
-          />
+          <Image
+            cloudName='dawyijhjw'
+            publicId={'portfolio/logos/go-logo-046185B647-seeklogo.com_flyzjn'}
+            width='auto'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='fill'
+            height='95'
+            alt={`go`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
         </div>
         <div className='logo'>
-          <img
-            src='https://seeklogo.com/images/G/go-logo-046185B647-seeklogo.com.png'
-            alt=''
-          />
+          <Image
+            cloudName='dawyijhjw'
+            publicId={'portfolio/logos/mongodb-logo_fhejdh'}
+            width='auto'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='fill'
+            height='95'
+            alt={`mongodb`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
         </div>
         <div className='logo'>
-          <img
-            src='https://upload.wikimedia.org/wikipedia/commons/8/82/C_Sharp_logo.png'
-            alt=''
-          />
+          <Image
+            cloudName='dawyijhjw'
+            publicId={
+              'portfolio/logos/firebase-logo-402F407EE0-seeklogo.com_k3cgly'
+            }
+            width='auto'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='fill'
+            height='95'
+            alt={`firebase`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
         </div>
         <div className='logo'>
-          <img
-            src='https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/Python_logo-512.png'
-            alt=''
-          />
+          <Image
+            cloudName='dawyijhjw'
+            publicId={'portfolio/logos/react_o25hr7'}
+            width='auto'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='fill'
+            height='95'
+            alt={`react`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
         </div>
         <div className='logo'>
-          <img
-            src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png'
-            alt=''
-          />
+          <Image
+            cloudName='dawyijhjw'
+            publicId={'portfolio/logos/1280px-Nextjs-logo.svg_ia6q4x'}
+            width='auto'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='fill'
+            height='95'
+            alt={`nextjs`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
         </div>
         <div className='logo'>
-          <img
-            src='http://pluspng.com/img-png/jquery-logo-png--800.gif'
-            alt=''
-          />
+          <Image
+            cloudName='dawyijhjw'
+            publicId={'portfolio/logos/1_bm7KFpEG2Qahn24t0OTNlQ_lji4zp'}
+            width='auto'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='fill'
+            height='95'
+            alt={`postgresSQL`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
+        </div>
+        <div className='logo'>
+          <Image
+            cloudName='dawyijhjw'
+            publicId={
+              'portfolio/logos/Docker-Logo-White-RGB_Vertical-BG_0_fpgkur'
+            }
+            width='auto'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='fill'
+            height='95'
+            alt={`docker`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
+        </div>
+        <div className='logo'>
+          <Image
+            cloudName='dawyijhjw'
+            publicId={'portfolio/logos/django_cfxthi'}
+            width='auto'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='fill'
+            height='95'
+            alt={`django`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
+        </div>
+        <div className='logo'>
+          <Image
+            cloudName='dawyijhjw'
+            publicId={'portfolio/logos/download_fnw9m2'}
+            width='auto'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='fill'
+            height='95'
+            alt={`aws`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
+        </div>
+        <div className='logo'>
+          <Image
+            cloudName='dawyijhjw'
+            publicId={'portfolio/logos/gql_cfhaey'}
+            width='auto'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='fit'
+            height='95'
+            alt={`gql`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
         </div>
       </div>
     </div>
@@ -107,7 +439,6 @@ export default () => (
           position: relative;
         }
 
-
         img {
           width: 100%;
           height: 100%;
@@ -115,16 +446,22 @@ export default () => (
 
         #pinboard {
           position: absolute;
+          max-width: 100%;
         }
 
-        #pinboard:before{
-          content:'';
-          position:absolute;
-          width:88%;
-          height:78%;
-          top:11%;
-          left:6%;
-          background:rgba(255,255,255,0.2);
+        .pinboard-img {
+          width: 100%;
+          height: 100%;
+        }
+
+        #pinboard:before {
+          content: '';
+          position: absolute;
+          width: 88%;
+          height: 78%;
+          top: 11%;
+          left: 6%;
+          background: rgba(255, 255, 255, 0.2);
         }
 
         .container {
@@ -141,62 +478,55 @@ export default () => (
           width: 65px;
           heigth: 70px;
           margin: 0.5rem;
+          transition: all 0.5s ease;
         }
 
         .logo img {
           border-radius: 20%;
-          transition: all 0.5s ease;
+          width: 100%;
+          height: 100%;
         }
-        
-        .logo img:hover{
-            transform: scale(1.1);
+
+        .logo:hover {
+          transform: scale(1.1);
         }
 
         @media only screen and (max-width: 600px) {
+          #badges {
+            width: 350px;
+            margin: 0 auto;
+          }
 
-
-
-            #badges{
-                width:350px;
-                margin: 0 auto;
-            }
-
-            #pinboard:before{
-            }
-            .container{
-                top:40px;
-                left:30px;
-                width:250px;
-            }
-            .logo{
-                width:30px;
-                height:30px;   
-            }
+          #pinboard:before {
+          }
+          .container {
+            top: 40px;
+            left: 30px;
+            width: 250px;
+          }
+          .logo {
+            width: 30px;
+            height: 30px;
+          }
         }
-
-  
-
 
         @media only screen and (max-width: 700px) {
-            #badges{
-                width: 350px;
-                margin: 0 auto;
-            }
+          #badges {
+            width: 380px;
+            margin: 0 auto;
+          }
 
-            .container{
-                width: 320px;
-                top:30px;
-                left:33px;
-            }
+          .container {
+            width: 320px;
+            top: 30px;
+            left: 33px;
+          }
 
-            .logo{
-                width:40px;
-                height:35px;
-            }
-
+          .logo {
+            width: 46px;
+            height: 36px;
+          }
         }
-
-
       `}
     </style>
   </div>
