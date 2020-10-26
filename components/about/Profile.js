@@ -32,6 +32,13 @@ export default () => (
         experience/skills in software and application development using modern
         tools will be utilized for the advancement of the company.
       </p>
+      <a
+        href='../../static/Victor_Abu_Akleh_-_Software_Engineer.pdf'
+        rel='noopener'
+        download
+      >
+        Resume
+      </a>
     </div>
 
     <style jsx>{`
@@ -62,7 +69,28 @@ export default () => (
         margin: 0 auto;
         clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
       }
-
+ #profile .profile-container a{
+     background: #d9d5d5;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 0.75rem;
+    display:block;
+        margin: 0 auto;
+        width:30%;
+        font-size:1.3rem;
+        font-weight:bold;
+        box-shadow: -3px 5px 10px;
+        transition: all 0.3s ease-in-out;
+ }
+  #profile .profile-container a:hover{
+    box-shadow: -1px 2px 5px;
+    transform: translateY(2%);
+  }
+  #profile .profile-container a:active{
+    box-shadow:none;
+    transform: translateY(3%);
+  }
       @media (max-width: 768px){
         #profile .profile-container{
           width:100%;
