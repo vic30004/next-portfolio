@@ -57,6 +57,18 @@ export default () => (
             margin:1rem;
           }
         }
+        @media (max-width: 414px) {
+          .nav-bar li a{
+            font-size:0.75rem;
+            margin:1rem;
+          }
+        }
+        @media (max-width: 320px) {
+          .nav-bar li a{
+            font-size:0.65rem;
+            margin:1rem;
+          }
+        }
 
 
       `}

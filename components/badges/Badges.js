@@ -496,6 +496,7 @@ export default () => (
             width: 350px;
             margin: 0 auto;
           }
+ 
 
           #pinboard:before {
           }
@@ -512,7 +513,7 @@ export default () => (
 
         @media only screen and (max-width: 700px) {
           #badges {
-            width: 380px;
+            width: 370px;
             margin: 0 auto;
           }
 
@@ -527,6 +528,29 @@ export default () => (
             height: 36px;
           }
         }
+          @media only screen and (max-width: 360px) {
+          #badges {
+            width: 360px;
+            margin: 0 auto;
+          }
+          .logo{
+                width: 44px;
+    height: 33px;
+          }
+          @media only screen and (max-width: 320px) {
+          #badges {
+            width: 298px;
+            margin: 0 auto;
+          }
+                .container {
+    width: 255px;
+            left: 29px;
+          }
+
+          .logo{
+    width: 35px;
+    height: 24px;
+          }
       `}
     </style>
   </div>
