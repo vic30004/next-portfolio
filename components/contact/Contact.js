@@ -1,25 +1,29 @@
-import React from 'react'
+import React from 'react';
 
 const Contact = () => {
-    return (
-        <div id="contact">
-            <h2 className="title">
-                Contact
-            </h2>
-            <h3>Email:<span> victor_993@msn.com</span></h3>
-            <h3>Phone:<span> 201-660-3627</span></h3>
-            <div className="icons">
-             <a href="https://github.com/vic30004" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-            <a href="https://www.linkedin.com/in/victor-abu-akleh-920b24163/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a> 
-            </div>
-           
+  return (
+    <div id='contact'>
+      <h2 className='title'>Contact</h2>
+      <h3>
+        Email:<span> victor_993@msn.com</span>
+      </h3>
+      <h3>
+        Phone:<span> 201-660-3627</span>
+      </h3>
+      <div className='icons'>
+        <a href='https://github.com/vic30004' rel='noreferrer' target='_blank'>
+          <i className='fab fa-github fa-2x'></i>
+        </a>
+        <a
+          href='https://www.linkedin.com/in/victor-abu-akleh-920b24163/'
+          rel='noreferrer'
+          target='_blank'
+        >
+          <i className='fab fa-linkedin fa-2x'></i>
+        </a>
+      </div>
 
-
-
-
-            
-
-            <style jsx>{`
+      <style jsx>{`
             
 
                 #contact{
@@ -99,8 +103,8 @@ const Contact = () => {
                 }
 
             `}</style>
-        </div>
-    )
-}
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;

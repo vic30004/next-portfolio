@@ -1,6 +1,7 @@
 import Profile from './about/Profile';
 import Skills from './about/Skills';
 import Badges from './badges/Badges';
+import { Image, Placeholder } from 'cloudinary-react';
 
 export default () => (
   <section id='about'>
@@ -8,7 +9,26 @@ export default () => (
     <div className='card-container'>
       <div className='card'>
         <div className='logo'>
-          <img className='seo' src='../static/images/67-512.png' alt='' />
+          <Image
+            class='seo'
+            cloudName='dawyijhjw'
+            publicId={'portfolio/logos/67-512_zzvcnm'}
+            width='200'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='scale'
+            height='200'
+            alt={`SEO`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
         </div>
         <h2>SEO</h2>
         <p>
@@ -18,7 +38,26 @@ export default () => (
       </div>
       <div className='card'>
         <div className='logo'>
-          <img className='ux' src='../static/images/ux.png' alt='' />
+          <Image
+            class='seo'
+            cloudName='dawyijhjw'
+            publicId={'portfolio/logos/ux_goyr0i'}
+            width='200'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='scale'
+            height='200'
+            alt={`ux/ui`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
         </div>
         <h2>UX/UI</h2>
         <p>
@@ -30,7 +69,26 @@ export default () => (
       </div>
       <div className='card'>
         <div className='logo'>
-          <img className='scale' src='../static/images/scalable.png' alt='' />
+          <Image
+            class='seo'
+            cloudName='dawyijhjw'
+            publicId={'portfolio/logos/scalable_fvw8jq'}
+            width='200'
+            format='webp'
+            secure='true'
+            responive
+            responsiveUseBreakpoints='true'
+            quality='auto'
+            fetchFormat='auto'
+            dpr='auto'
+            loading='lazy'
+            crop='scale'
+            height='200'
+            alt={`scale`}
+            style={{ width: '100%', height: '100%' }}
+          >
+            <Placeholder type='pixelate' />
+          </Image>
         </div>
         <h2>Scalability</h2>
         <p>

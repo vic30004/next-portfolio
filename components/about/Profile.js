@@ -1,11 +1,30 @@
+import { Image, Placeholder } from 'cloudinary-react';
+
 export default () => (
   <div id='profile'>
     <div className='profile-container'>
       <div className='profile-picture'>
-        <img
-          src='../../static/images/42279262_567468957017253_7920891352865308672_n.jpg'
-          alt='profile-picture'
-        />
+        <Image
+          cloudName='dawyijhjw'
+          publicId={
+            'portfolio/logos/42279262_567468957017253_7920891352865308672_n_vaejke'
+          }
+          width='300'
+          format='webp'
+          secure='true'
+          responive
+          responsiveUseBreakpoints='true'
+          quality='auto'
+          fetchFormat='auto'
+          dpr='auto'
+          loading='lazy'
+          crop='scale'
+          height='300'
+          alt={`profile-picture`}
+          style={{ width: '100%', height: '100%' }}
+        >
+          <Placeholder type='pixelate' />
+        </Image>
       </div>
       <p>
         Highly flexible individual with analytical skills, Hopeful for the
@@ -28,7 +47,11 @@ export default () => (
         justify-content-center;
         margin: 0 auto;
       }
-
+        @media only screen and (max-width: 600px) {
+          #profile{
+            width:85%;
+          }
+        }
       #profile .profile-container{
           width:100%;
           margin: 0 1rem;
@@ -56,6 +79,14 @@ export default () => (
           width:200px;
         }
       }
+            @media (max-width: 320px){
+                        #profile{
+                          width:100%;
+                          margin:0;
+                        }
+
+            }
+
     `}</style>
   </div>
 );
