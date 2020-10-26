@@ -1,8 +1,7 @@
 import Profile from './about/Profile';
-import Skills from './about/Skills';
-import Badges from './badges/Badges';
+import dynamic from 'next/dynamic';
 import { Image, Placeholder } from 'cloudinary-react';
-
+const Badges = dynamic(() => import('./badges/Badges'),{loading:<p>Loading...</p>});
 export default () => (
   <section id='about'>
     <h2 className='title'>About</h2>

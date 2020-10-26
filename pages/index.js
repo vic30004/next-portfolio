@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
 import fetch from 'isomorphic-unfetch';
 import Header from '../components/Header';
-import About from '../components/About';
 import Nav from '../components/Nav';
-import Portfolio from '../components/portfolio/Portfolio';
 import Head from 'next/head';
 import Contact from '../components/contact/Contact';
 import Footer from '../components/footer/Footer';
 import { get } from 'http';
 import { Helmet } from 'react-helmet';
-
+import dynamic from 'next/dynamic';
+const Portfolio = dynamic(() => import('../components/portfolio/Portfolio'), {
+  loading: <p>Loading...</p>,
+});
+const About = dynamic(() => import('../components/About'), {
+  loading: <p>Loading...</p>,
+});
 class Index extends Component {
   constructor(props) {
     super(props);
