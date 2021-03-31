@@ -173,61 +173,8 @@ export default () => (
           overflow: hidden;
         }
 
-        @keyframes grow {
-          0% {
-            transform: scale(0.7);
-          }
-          25% {
-            transform: scale(1);
-          }
-          50% {
-            transform: scale(1.2);
-          }
-          75% {
-            transform: scale(1.1);
-          }
-          100% {
-            transform: scale(1);
-          }
-        }
-
-        @keyframes spin {
-          0% {
-            transform: rotateY(0);
-          }
-
-          25% {
-            transform: rotateY(2rad);
-          }
-
-          50% {
-            transform: rotateY(3.14rad);
-          }
-
-          100% {
-            transform: rotate(2turn);
-          }
-        }
-
-        @keyframes fly {
-          0% {
-            transform: translateY(0);
-          }
-          25% {
-            transform: translateY(-30%);
-          }
-          50% {
-            transform: translateY(-60%);
-          }
-          75% {
-            transform: translateY(-80%);
-          }
-          100% {
-            transform: translateY(-100%);
-          }
-        }
-
-        @media (max-width: 768px) {
+       
+        @media (max-width: 1200px) {
           .card-container {
             flex-flow: column nowrap;
           }

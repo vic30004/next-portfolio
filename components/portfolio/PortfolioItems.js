@@ -352,6 +352,7 @@ export class PortfolioItems extends Component {
                 height: 200px;
                 border-radius: 20px;
                 font-size: 0.75rem;
+                margin:1rem 0;
               }
 
               .front {

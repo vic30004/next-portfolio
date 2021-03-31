@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from 'react';
-import QueryButtons from '../queryButtons/QueryButtons';
-import PortfolioItems from './PortfolioItems';
+import React, { Component, Fragment } from "react";
+import QueryButtons from "../queryButtons/QueryButtons";
+import PortfolioItems from "./PortfolioItems";
 
 export class Portfolio extends Component {
   render() {
@@ -25,10 +25,9 @@ export class Portfolio extends Component {
             background: whitesmoke;
             width: 100%;
             text-align: center;
-            font-family: 'Raleway', sans-serif;
+            font-family: "Raleway", sans-serif;
             font-display: swap;
             padding: 2rem 0;
-            clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
           }
           #projects {
             margin: 2rem 0;
@@ -65,10 +64,23 @@ export class Portfolio extends Component {
               transform: translateX(0);
             }
           }
-          @media (max-width: 768px) {
+
+          @media (max-width: 1400px) {
             #portfolio {
-              clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+              margin-top: 2rem;
             }
+
+            #projects .project-container {
+              grid-template-columns: repeat(3, 1fr);
+            }
+          }
+          @media (max-width: 769px) {
+            #projects .project-container {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
+
+          @media (max-width: 320px) {
             #projects .project-container {
               grid-template-columns: repeat(1, 1fr);
               width: 370px;

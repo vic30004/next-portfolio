@@ -1,12 +1,12 @@
-import React, { lazy, Suspense } from 'react';
-import { Image, Placeholder } from 'cloudinary-react';
+import React, { lazy, Suspense } from "react";
+import { Image, Placeholder } from "cloudinary-react";
 
 export default () => (
   <div id='badges'>
     <div id='pinboard'>
       <Image
         cloudName='dawyijhjw'
-        publicId={'portfolio/logos/pin-board-2631965_960_720_b0s9us'}
+        publicId={"portfolio/logos/pin-board-2631965_960_720_b0s9us"}
         width='auto'
         format='webp'
         secure='true'
@@ -19,7 +19,7 @@ export default () => (
         crop='scale'
         height='494'
         alt={`pinboard`}
-        style={{ width: '100%', height: '100%' }}
+        style={{ width: "100%", height: "100%" }}
       >
         <Placeholder type='pixelate' />
       </Image>
@@ -27,7 +27,7 @@ export default () => (
         <div className='logo'>
           <Image
             cloudName='dawyijhjw'
-            publicId={'portfolio/logos/HTML5_Badge_512_gdbacg'}
+            publicId={"portfolio/logos/HTML5_Badge_512_gdbacg"}
             width='65'
             format='webp'
             secure='true'
@@ -40,7 +40,7 @@ export default () => (
             crop='fit'
             height='95'
             alt={`htlm5`}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: "100%", height: "100%" }}
           >
             <Placeholder type='pixelate' />
           </Image>
@@ -48,7 +48,7 @@ export default () => (
         <div className='logo'>
           <Image
             cloudName='dawyijhjw'
-            publicId={'portfolio/logos/1200px-CSS.3.svg_qmqrsc'}
+            publicId={"portfolio/logos/1200px-CSS.3.svg_qmqrsc"}
             width='auto'
             format='webp'
             secure='true'
@@ -61,7 +61,7 @@ export default () => (
             crop='fill'
             height='95'
             alt={`css`}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: "100%", height: "100%" }}
           >
             <Placeholder type='pixelate' />
           </Image>
@@ -69,7 +69,7 @@ export default () => (
         <div className='logo'>
           <Image
             cloudName='dawyijhjw'
-            publicId={'portfolio/logos/600px-JavaScript-logo_pcwwgy'}
+            publicId={"portfolio/logos/600px-JavaScript-logo_pcwwgy"}
             width='auto'
             format='webp'
             secure='true'
@@ -82,7 +82,7 @@ export default () => (
             crop='fill'
             height='95'
             alt={`javascript`}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: "100%", height: "100%" }}
           >
             <Placeholder type='pixelate' />
           </Image>
@@ -90,7 +90,7 @@ export default () => (
         <div className='logo'>
           <Image
             cloudName='dawyijhjw'
-            publicId={'portfolio/logos/590px-Node.js_logo.svg_tnujf6'}
+            publicId={"portfolio/logos/590px-Node.js_logo.svg_tnujf6"}
             width='auto'
             format='webp'
             secure='true'
@@ -103,7 +103,7 @@ export default () => (
             crop='fill'
             height='95'
             alt={`node js`}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: "100%", height: "100%" }}
           >
             <Placeholder type='pixelate' />
           </Image>
@@ -111,7 +111,7 @@ export default () => (
         <div className='logo'>
           <Image
             cloudName='dawyijhjw'
-            publicId={'portfolio/logos/1200px-MySQL.svg_kwdmwj'}
+            publicId={"portfolio/logos/1200px-MySQL.svg_kwdmwj"}
             width='auto'
             format='webp'
             secure='true'
@@ -124,7 +124,7 @@ export default () => (
             crop='fill'
             height='95'
             alt={`mysql`}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: "100%", height: "100%" }}
           >
             <Placeholder type='pixelate' />
           </Image>
@@ -132,7 +132,7 @@ export default () => (
         <div className='logo'>
           <Image
             cloudName='dawyijhjw'
-            publicId={'portfolio/logos/jquery-logo-png--800_b53nwl'}
+            publicId={"portfolio/logos/jquery-logo-png--800_b53nwl"}
             width='auto'
             format='webp'
             secure='true'
@@ -145,7 +145,7 @@ export default () => (
             crop='fill'
             height='95'
             alt={`jquery`}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: "100%", height: "100%" }}
           >
             <Placeholder type='pixelate' />
           </Image>
@@ -153,7 +153,7 @@ export default () => (
         <div className='logo'>
           <Image
             cloudName='dawyijhjw'
-            publicId={'portfolio/logos/512px-Bootstrap_logo.svg_kl3qb8'}
+            publicId={"portfolio/logos/512px-Bootstrap_logo.svg_kl3qb8"}
             width='auto'
             format='webp'
             secure='true'
@@ -166,7 +166,7 @@ export default () => (
             crop='fill'
             height='95'
             alt={`bootstrap`}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: "100%", height: "100%" }}
           >
             <Placeholder type='pixelate' />
           </Image>
@@ -174,7 +174,7 @@ export default () => (
         <div className='logo'>
           <Image
             cloudName='dawyijhjw'
-            publicId={'portfolio/logos/Python_logo-512_urnfbd'}
+            publicId={"portfolio/logos/Python_logo-512_urnfbd"}
             width='auto'
             format='webp'
             secure='true'
@@ -187,7 +187,7 @@ export default () => (
             crop='fill'
             height='95'
             alt={`python`}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: "100%", height: "100%" }}
           >
             <Placeholder type='pixelate' />
           </Image>
@@ -195,7 +195,7 @@ export default () => (
         <div className='logo'>
           <Image
             cloudName='dawyijhjw'
-            publicId={'portfolio/logos/C_Sharp_logo_noq1za'}
+            publicId={"portfolio/logos/C_Sharp_logo_noq1za"}
             width='auto'
             format='webp'
             secure='true'
@@ -208,7 +208,7 @@ export default () => (
             crop='fill'
             height='95'
             alt={`c#`}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: "100%", height: "100%" }}
           >
             <Placeholder type='pixelate' />
           </Image>
@@ -216,7 +216,7 @@ export default () => (
         <div className='logo'>
           <Image
             cloudName='dawyijhjw'
-            publicId={'portfolio/logos/go-logo-046185B647-seeklogo.com_flyzjn'}
+            publicId={"portfolio/logos/go-logo-046185B647-seeklogo.com_flyzjn"}
             width='auto'
             format='webp'
             secure='true'
@@ -229,7 +229,7 @@ export default () => (
             crop='fill'
             height='95'
             alt={`go`}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: "100%", height: "100%" }}
           >
             <Placeholder type='pixelate' />
           </Image>
@@ -237,7 +237,7 @@ export default () => (
         <div className='logo'>
           <Image
             cloudName='dawyijhjw'
-            publicId={'portfolio/logos/mongodb-logo_fhejdh'}
+            publicId={"portfolio/logos/mongodb-logo_fhejdh"}
             width='auto'
             format='webp'
             secure='true'
@@ -250,7 +250,7 @@ export default () => (
             crop='fill'
             height='95'
             alt={`mongodb`}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: "100%", height: "100%" }}
           >
             <Placeholder type='pixelate' />
           </Image>
@@ -259,7 +259,7 @@ export default () => (
           <Image
             cloudName='dawyijhjw'
             publicId={
-              'portfolio/logos/firebase-logo-402F407EE0-seeklogo.com_k3cgly'
+              "portfolio/logos/firebase-logo-402F407EE0-seeklogo.com_k3cgly"
             }
             width='auto'
             format='webp'
@@ -273,7 +273,7 @@ export default () => (
             crop='fill'
             height='95'
             alt={`firebase`}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: "100%", height: "100%" }}
           >
             <Placeholder type='pixelate' />
           </Image>
@@ -281,7 +281,7 @@ export default () => (
         <div className='logo'>
           <Image
             cloudName='dawyijhjw'
-            publicId={'portfolio/logos/react_o25hr7'}
+            publicId={"portfolio/logos/react_o25hr7"}
             width='auto'
             format='webp'
             secure='true'
@@ -294,7 +294,7 @@ export default () => (
             crop='fill'
             height='95'
             alt={`react`}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: "100%", height: "100%" }}
           >
             <Placeholder type='pixelate' />
           </Image>
@@ -302,7 +302,7 @@ export default () => (
         <div className='logo'>
           <Image
             cloudName='dawyijhjw'
-            publicId={'portfolio/logos/1280px-Nextjs-logo.svg_ia6q4x'}
+            publicId={"portfolio/logos/1280px-Nextjs-logo.svg_ia6q4x"}
             width='auto'
             format='webp'
             secure='true'
@@ -315,7 +315,7 @@ export default () => (
             crop='fill'
             height='95'
             alt={`nextjs`}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: "100%", height: "100%" }}
           >
             <Placeholder type='pixelate' />
           </Image>
@@ -323,7 +323,7 @@ export default () => (
         <div className='logo'>
           <Image
             cloudName='dawyijhjw'
-            publicId={'portfolio/logos/1_bm7KFpEG2Qahn24t0OTNlQ_lji4zp'}
+            publicId={"portfolio/logos/1_bm7KFpEG2Qahn24t0OTNlQ_lji4zp"}
             width='auto'
             format='webp'
             secure='true'
@@ -336,7 +336,7 @@ export default () => (
             crop='fill'
             height='95'
             alt={`postgresSQL`}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: "100%", height: "100%" }}
           >
             <Placeholder type='pixelate' />
           </Image>
@@ -345,7 +345,7 @@ export default () => (
           <Image
             cloudName='dawyijhjw'
             publicId={
-              'portfolio/logos/Docker-Logo-White-RGB_Vertical-BG_0_fpgkur'
+              "portfolio/logos/Docker-Logo-White-RGB_Vertical-BG_0_fpgkur"
             }
             width='auto'
             format='webp'
@@ -359,7 +359,7 @@ export default () => (
             crop='fill'
             height='95'
             alt={`docker`}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: "100%", height: "100%" }}
           >
             <Placeholder type='pixelate' />
           </Image>
@@ -367,7 +367,7 @@ export default () => (
         <div className='logo'>
           <Image
             cloudName='dawyijhjw'
-            publicId={'portfolio/logos/django_cfxthi'}
+            publicId={"portfolio/logos/django_cfxthi"}
             width='auto'
             format='webp'
             secure='true'
@@ -380,7 +380,7 @@ export default () => (
             crop='fill'
             height='95'
             alt={`django`}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: "100%", height: "100%" }}
           >
             <Placeholder type='pixelate' />
           </Image>
@@ -388,7 +388,7 @@ export default () => (
         <div className='logo'>
           <Image
             cloudName='dawyijhjw'
-            publicId={'portfolio/logos/download_fnw9m2'}
+            publicId={"portfolio/logos/download_fnw9m2"}
             width='auto'
             format='webp'
             secure='true'
@@ -401,7 +401,7 @@ export default () => (
             crop='fill'
             height='95'
             alt={`aws`}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: "100%", height: "100%" }}
           >
             <Placeholder type='pixelate' />
           </Image>
@@ -409,7 +409,7 @@ export default () => (
         <div className='logo'>
           <Image
             cloudName='dawyijhjw'
-            publicId={'portfolio/logos/gql_cfhaey'}
+            publicId={"portfolio/logos/gql_cfhaey"}
             width='auto'
             format='webp'
             secure='true'
@@ -422,7 +422,7 @@ export default () => (
             crop='fit'
             height='95'
             alt={`gql`}
-            style={{ width: '100%', height: '100%' }}
+            style={{ width: "100%", height: "100%" }}
           >
             <Placeholder type='pixelate' />
           </Image>
@@ -491,6 +491,44 @@ export default () => (
           transform: scale(1.1);
         }
 
+     
+       
+        @media only screen and (max-width: 1200px) {
+          #badges {
+            width: 370px;
+            margin: 0 auto;
+          }
+
+          .container {
+            width: 320px;
+            top: 30px;
+            left: 33px;
+          }
+
+          .logo {
+            width: 46px;
+            height: 36px;
+          }
+        }
+        @media only screen 
+        and (min-width: 1024px) 
+        and (max-height: 1366px) 
+        and (orientation: portrait) 
+        and (-webkit-min-device-pixel-ratio: 1.5) {
+          #badges {
+            width: 370px;
+            margin: 0 auto;
+          }
+          .container {
+            width: 320px;
+            top: 30px;
+            left: 33px;
+          }
+          .logo {
+            width: 46px;
+            height: 36px;
+          }
+      }
         @media only screen and (max-width: 600px) {
           #badges {
             width: 350px;
@@ -508,24 +546,6 @@ export default () => (
           .logo {
             width: 30px;
             height: 30px;
-          }
-        }
-
-        @media only screen and (max-width: 700px) {
-          #badges {
-            width: 370px;
-            margin: 0 auto;
-          }
-
-          .container {
-            width: 320px;
-            top: 30px;
-            left: 33px;
-          }
-
-          .logo {
-            width: 46px;
-            height: 36px;
           }
         }
           @media only screen and (max-width: 360px) {

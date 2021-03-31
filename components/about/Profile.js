@@ -51,7 +51,7 @@ export default () => (
         flex-flow: column wrap;
         width: 50%;
         align-items: center;
-        justify-content-center;
+        justify-content:center;
         margin: 0 auto;
       }
         @media only screen and (max-width: 600px) {
