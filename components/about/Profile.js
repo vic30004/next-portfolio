@@ -33,7 +33,7 @@ export default () => (
         tools will be utilized for the advancement of the company.
       </p>
       <a
-        href='../../static/Victor_Abu_Akleh_-_Software_Engineer.pdf'
+        href='../../static/Victor-Full Stack Developer.pdf'
         rel='noopener'
         download
       >

@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
     return (
         <footer id="foot">
-            <h4>Copyright &copy; 2020</h4>
+            <h4>Copyright &copy; 2021</h4>
             <style jsx>{`
                 #foot{
                     background:#111;
