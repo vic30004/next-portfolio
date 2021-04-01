@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
-import fetch from 'isomorphic-unfetch';
-import Header from '../components/Header';
-import Nav from '../components/Nav';
-import Head from 'next/head';
-import Contact from '../components/contact/Contact';
-import Footer from '../components/footer/Footer';
-import { get } from 'http';
-import { Helmet } from 'react-helmet';
-import dynamic from 'next/dynamic';
-const Portfolio = dynamic(() => import('../components/portfolio/Portfolio'), {
+import React, { Component } from "react";
+import fetch from "isomorphic-unfetch";
+import Header from "../components/Header";
+import Nav from "../components/Nav";
+import Head from "next/head";
+import Contact from "../components/contact/Contact";
+import Footer from "../components/footer/Footer";
+import { get } from "http";
+import { Helmet } from "react-helmet";
+import dynamic from "next/dynamic";
+const Portfolio = dynamic(() => import("../components/portfolio/Portfolio"), {
   loading: <p>Loading...</p>,
 });
-const About = dynamic(() => import('../components/About'), {
+const About = dynamic(() => import("../components/About"), {
   loading: <p>Loading...</p>,
 });
 class Index extends Component {
@@ -22,7 +22,7 @@ class Index extends Component {
 
   static async getInitialProps() {
     const res = await fetch(
-      'https://victor-porfolio-api.herokuapp.com/api/portfolio/projects'
+      "https://victor-porfolio-api.herokuapp.com/api/portfolio/projects"
     );
     const data = await res.json();
     return { project: data.data };
@@ -50,6 +50,15 @@ class Index extends Component {
       this.setState({ project: data.data });
     };
 
+    const getLocation = async () => {
+      let url =
+        "https://ipgeolocation.abstractapi.com/v1/?api_key=9091570509764de3805d7f6ef085298d";
+
+      const res = await fetch(url);
+      const data = await res.json();
+      return data.country;
+    };
+
     return (
       <div>
         <Head>
@@ -70,9 +79,9 @@ class Index extends Component {
         tools will be utilized for the advancement of the company.'
           />
         </Helmet>
-        <Header />
+        <Header location={getLocation} />
         <Nav id='nav' onScroll={this.handleScroll} />
-        <About />
+        <About location={getLocation} />
         <Portfolio
           projects={this.state}
           querySearch={querySearch}
@@ -80,7 +89,7 @@ class Index extends Component {
           getDeployed={getDeployed}
         />
         <Contact />
-        <Footer />
+        <Footer location={this.state} />
         <style jsx global>{`
           body,
           html {

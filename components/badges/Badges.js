@@ -529,6 +529,21 @@ export default () => (
             height: 36px;
           }
       }
+      @media (max-width:1200px){
+        #badges {
+          width: 370px;
+          margin: 0 auto;
+        }
+        .container {
+          width: 320px;
+          top: 30px;
+          left: 33px;
+        }
+        .logo {
+          width: 46px;
+          height: 36px;
+        }
+      }
         @media only screen and (max-width: 600px) {
           #badges {
             width: 350px;

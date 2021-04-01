@@ -111,14 +111,14 @@ const particleOpt = {
   },
 };
 
-export default () => (
+export default ({location}) => (
   <div className='root'>
     <header id='hero-head'>
       <Particles className='particle' params={particleOpt} />
       <div className='main-content'>
         <div className='container'>
           <p>
-            Hello, I am <span className='important'>Victor Abu Akleh</span>.
+            Hello, I am <span className='important'>Victor {location.country==="Israel"?'Meneshian': 'Abu Akleh'}</span>.
             <br></br>I am a{' '}
             <span className='important'> software engineer </span>
           </p>

@@ -74,13 +74,13 @@ export class Portfolio extends Component {
               grid-template-columns: repeat(3, 1fr);
             }
           }
-          @media (max-width: 769px) {
+          @media (max-width: 990px) {
             #projects .project-container {
               grid-template-columns: repeat(2, 1fr);
             }
           }
 
-          @media (max-width: 320px) {
+          @media (max-width: 540px) {
             #projects .project-container {
               grid-template-columns: repeat(1, 1fr);
               width: 370px;
