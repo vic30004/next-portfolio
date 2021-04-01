@@ -563,15 +563,7 @@ export default () => (
             height: 30px;
           }
         }
-          @media only screen and (max-width: 360px) {
-          #badges {
-            width: 360px;
-            margin: 0 auto;
-          }
-          .logo{
-                width: 44px;
-    height: 33px;
-          }
+    
           @media only screen and (max-width: 320px) {
           #badges {
             width: 298px;
